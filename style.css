@@ -1,0 +1,115 @@
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vh;
+
+  color: rgb(4, 30, 160);
+  background: radial-gradient(
+    circle,
+    rgba(222, 222, 222, 1) 0%,
+    rgba(131, 130, 131, 1) 100%
+  );
+}
+
+/* HEADER AND FOOTER STYLING */
+header,
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 5px 0;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-shadow: 2px 1px 3px rgb(228, 228, 228);
+
+  background: radial-gradient(
+    circle,
+    rgb(60, 213, 255) 0%,
+    rgba(0, 81, 230, 0.781) 100%
+  );
+}
+
+header img {
+  width: 50px;
+  margin: 3px 10px;
+}
+
+header h2 {
+  padding: 0 5px;
+}
+
+footer h3 {
+  font-size: 1.3em;
+}
+
+/* Main Container */
+.pokemonAPIContainer {
+  color: brown;
+  text-align: center;
+}
+
+.pokemonAPIContainer > input,
+.pokemonAPIContainer > button {
+  padding: 3px 5px;
+  font-size: 1.5em;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.pokemonAPIContainer > input:hover {
+  transform: scale(1.02);
+  transition: all 0.1s linear;
+}
+
+.pokemonAPIContainer > button {
+  color: white;
+  background-color: grey;
+  box-shadow: 2px 2px 2px black;
+}
+
+.pokemonAPIContainer > button:hover {
+  color: white;
+  background-color: grey;
+  box-shadow: 0 0 2px black;
+}
+
+.pokemonAPIContainer > button:active {
+  color: rgb(0, 187, 255);
+}
+
+.pokemonCard {
+  width: 280px;
+  height: 420px;
+  margin: 2em auto;
+
+  border: 2px solid brown;
+  border-radius: 5px;
+  box-shadow: 4px 5px 1px 3px black;
+  display: none;
+}
+
+#pokemonName,
+.display {
+  width: 93%;
+  margin: 5px auto 5px;
+}
+
+.display {
+  height: 250px;
+  border: 1px solid brown;
+  border-radius: 3px;
+}
+
+p {
+  margin: 3px;
+}

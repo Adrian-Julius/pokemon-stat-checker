@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Stats Checker</title>
+    <!-- Icon link-->
+    <link
+      rel="shortcut icon"
+      href="./assets/pokemonLogo.png"
+      type="assets/x-icon"
+    />
+
+    <!-- CSS link-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/pokemonBg.png" alt="" />
+      <h2>POKEMON STATS</h2>
+      <img src="./assets/pokemonBg.png" alt="" />
+    </header>
+
+    <div class="pokemonAPIContainer">
+      <input type="text" id="inputPokemon" />
+      <button type="submit" onclick="displayPokemon()">FETCH</button>
+      
+      <div class="pokemonCard">
+        <h2 id="pokemonName"></h2>
+        <img src="" alt="POKEMON IMAGE" class="display" id="displayImage" />
+        <div class="stats">
+          <p id="hp"></p>
+          <p id="attack"></p>
+          <p id="defense"></p>
+          <p id="speed"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h3>© 2024 Adrian Julius Villaruel. All rights reserved.</h3>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
